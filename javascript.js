@@ -1,11 +1,12 @@
 function getComputerChoice() {
   computerChoice = Math.floor(Math.random() * 3);
+  console.log(computerChoice)
   switch(computerChoice){
-    case 1:
+    case 0:
       return 'scissors'
-    case 2:
+    case 1:
       return 'paper'
-    case 3:
+    case 2:
       return 'rock'
     default:
       console.log("Invalid Input.")
@@ -26,26 +27,34 @@ function getHumanChoice() {
   }
 }
 
-function playRound(humanChoice, computerChoice){
-  
+function playRound(){
+  humanChoice = getHumanChoice()
+  computerChoice = getComputerChoice()
+  console.log( `Human Choice is: ${humanChoice} & Computer Choice is: ${computerChoice}`)
+
   if (humanChoice === computerChoice){
-    
+    console.log('It is a tie!')
   }
   else if( humanChoice === "Invalid Input." || computerChoice === "Invalid Input."){
-
+    console.log('Invalid input, check your code')
   }
   else {
   
     switch (humanChoice) {
       case 'scissors':
         computerChoice === "paper" ? humanScore++ : computerScore ++
+        console.log(`Human: ${humanScore} Computer: ${computerScore}`)
         break;
       case 'rock':
         computerChoice === "scissors" ? humanScore++ : computerScore ++
+        console.log(`Human: ${humanScore} Computer: ${computerScore}`)
         break;
       case 'paper':
         computerChoice === "rock" ? humanScore++ : computerScore ++
+        console.log(`Human: ${humanScore} Computer: ${computerScore}`)
       break;
+      default:
+        console.log('Something went wrong.')
   }
 
   }
