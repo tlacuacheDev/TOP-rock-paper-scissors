@@ -1,7 +1,10 @@
 body {
+  background-color: black;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 h1,ul { text-align: center;
@@ -11,18 +14,42 @@ ul{
   list-style-type: none;
   display: flex;
   justify-content: center;
+  gap: 10px;
+  padding: 0;
 }
 
 .option{
   padding: 0 15px;
   border: black solid;
   height: 150px;
-  width: 150px;
+  width: 180px;
   text-align: center;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: whitesmoke;;
 }
 
 li {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center; 
   align-items: center
+}
+
+
+.option:hover {
+  background-color: rgba(211, 211, 211, 0.085); /* Cambia el fondo al pasar el mouse */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+  cursor: pointer; /* Cambia el cursor para indicar interactividad */
+  color: whitesmoke
+  
+}
+
+
+
+.option:active {
+  background-color: whitesmoke; /* Cambia el fondo al pasar el mouse */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+  cursor: pointer; /* Cambia el cursor para indicar interactividad */
+  
 }
