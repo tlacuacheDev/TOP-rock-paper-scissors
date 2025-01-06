@@ -59,3 +59,23 @@ li {
   cursor: pointer; /* Cambia el cursor para indicar interactividad */
   
 }
+
+.scoreboard, .scoreboard-message, .scoreboard-message2 {
+ text-align: center;
+ 
+ font-weight: 700;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.scoreboard{
+  font-size: 25px;
+}
+.scoreboard-message{
+  font-size: 35px;
+
+}
+
+.scoreboard-message2{
+  font-size: 25px;
+}
